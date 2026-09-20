@@ -1,0 +1,499 @@
+
+======================================================================
+1. DATASET STRUCTURE
+======================================================================
+Release rows:             52,127
+Unique OCIDs:             50,359
+Unique release IDs:       50,380
+Award rows:               46,085
+Unique award IDs:         45,012
+Unique supplier IDs:     36,827
+Unique supplier names:   30,792
+
+======================================================================
+2. RELEASE TAG DISTRIBUTION
+======================================================================
+award                       41,411 ( 79.44%)
+tender                       4,660 (  8.94%)
+awardUpdate                  3,666 (  7.03%)
+tenderAmendment              1,310 (  2.51%)
+planning                     1,080 (  2.07%)
+
+======================================================================
+3. RELEASES PER PROCUREMENT (OCID)
+======================================================================
+OCIDs with one release:      48,591
+OCIDs with multiple releases:1,768
+Maximum releases for one OCID: 2
+
+Distribution:
+    1 release(s):   48,591 OCIDs
+    2 release(s):    1,768 OCIDs
+
+======================================================================
+4. EXAMPLES OF MULTI-RELEASE PROCUREMENTS
+======================================================================
+
+OCID: ocds-b5fd17-a0905144-7e9b-4a28-bed5-166f613a9961
+Number of releases: 2
+  2025-01-20 09:39:54+00:00 | planning | 709b6293-ec40-4f0e-9a74-a7b61e79e8af-818390
+  2025-01-20 09:39:54+00:00 | planning | 709b6293-ec40-4f0e-9a74-a7b61e79e8af-818390
+
+OCID: ocds-b5fd17-f85d3354-8df5-43dd-abf3-4a8840243b65
+Number of releases: 2
+  2025-01-02 15:51:36+00:00 | tenderAmendment | 7f6a3110-e53e-419d-a598-ff3f42071f9b-814270
+  2025-02-06 13:16:59+00:00 | tenderAmendment | 7f6a3110-e53e-419d-a598-ff3f42071f9b-823950
+
+OCID: ocds-b5fd17-a769b5dd-af21-44da-b1ee-680390b1ce20
+Number of releases: 2
+  2025-03-07 11:25:53+00:00 | awardUpdate | 23433ba5-2c1b-4963-ace1-7257410a22d3-832466
+  2025-03-07 11:25:53+00:00 | awardUpdate | 23433ba5-2c1b-4963-ace1-7257410a22d3-832466
+
+OCID: ocds-b5fd17-3556c13e-7647-44db-9fcd-18a975265b70
+Number of releases: 2
+  2025-08-01 14:19:59+00:00 | planning | 73b7a42a-7dc8-45b5-a5f3-5ac1567d72a9-857299
+  2025-08-01 14:19:59+00:00 | planning | 73b7a42a-7dc8-45b5-a5f3-5ac1567d72a9-857299
+
+OCID: ocds-b5fd17-509e8e15-6d6f-4df0-a776-5c63589e58fc
+Number of releases: 2
+  2025-07-31 10:22:15+00:00 | awardUpdate | 0e9740b3-d5fb-4184-96d0-1a5e1e754dad-853304
+  2025-07-31 10:22:15+00:00 | awardUpdate | 0e9740b3-d5fb-4184-96d0-1a5e1e754dad-853304
+
+OCID: ocds-b5fd17-e8e5cd39-5119-4c56-88c3-164a79aade02
+Number of releases: 2
+  2025-01-21 16:09:45+00:00 | tender | 9067d4ac-ea5c-4ced-bf08-8103d8415e08-819131
+  2025-01-21 16:09:45+00:00 | tender | 9067d4ac-ea5c-4ced-bf08-8103d8415e08-819131
+
+OCID: ocds-b5fd17-3c550e67-3f28-4700-8d0f-d0d5004d413e
+Number of releases: 2
+  2025-09-03 16:46:40+00:00 | awardUpdate | d93c14e4-8f42-4071-9d57-fbd62c80d8eb-862059
+  2025-09-03 16:46:40+00:00 | awardUpdate | d93c14e4-8f42-4071-9d57-fbd62c80d8eb-862059
+
+OCID: ocds-b5fd17-ac2553f0-bac4-47ae-bd0c-b2d9fc2162ad
+Number of releases: 2
+  2025-04-08 15:34:55+00:00 | awardUpdate | e364a7b8-f440-4bd5-a6f5-841a2265007b-839290
+  2025-04-08 15:34:55+00:00 | awardUpdate | e364a7b8-f440-4bd5-a6f5-841a2265007b-839290
+
+OCID: ocds-b5fd17-2ea5cd09-8fc3-490a-9a28-3c8628623f98
+Number of releases: 2
+  2025-04-04 09:46:44+00:00 | awardUpdate | 872c5d3e-1e1b-4ef0-a831-0c13f8485b11-838554
+  2025-04-04 09:46:44+00:00 | awardUpdate | 872c5d3e-1e1b-4ef0-a831-0c13f8485b11-838554
+
+OCID: ocds-b5fd17-ac27454c-aee2-42b3-8974-7665905ed30a
+Number of releases: 2
+  2025-05-19 06:37:21+00:00 | awardUpdate | 7799789c-067c-474f-98bf-3a9f6b2b2149-845809
+  2025-05-19 06:37:21+00:00 | awardUpdate | 7799789c-067c-474f-98bf-3a9f6b2b2149-845809
+
+OCID: ocds-b5fd17-9d53ab4a-e783-47de-a577-f2d78ce1c5f3
+Number of releases: 2
+  2025-04-01 10:41:51+00:00 | awardUpdate | 4eced8b3-171c-4106-9bea-c26c20b25c32-837655
+  2025-04-01 10:41:51+00:00 | awardUpdate | 4eced8b3-171c-4106-9bea-c26c20b25c32-837655
+
+OCID: ocds-b5fd17-1e1c5552-fb8f-4981-94d8-229c8d2ed33c
+Number of releases: 2
+  2025-02-24 15:13:56+00:00 | tenderAmendment | 01311094-022f-42f8-bbd7-74e02db50f7d-830020
+  2025-02-24 15:13:56+00:00 | tenderAmendment | 01311094-022f-42f8-bbd7-74e02db50f7d-830020
+
+OCID: ocds-b5fd17-101ff593-3b21-48af-8ece-74157fb782c5
+Number of releases: 2
+  2025-02-25 16:13:26+00:00 | tenderAmendment | 91577f33-f669-4cfc-a2a5-f05fe07fe8bf-830350
+  2025-02-25 16:13:26+00:00 | tenderAmendment | 91577f33-f669-4cfc-a2a5-f05fe07fe8bf-830350
+
+OCID: ocds-b5fd17-9d57646b-1624-4aa6-9ac8-7ddf0d4da02c
+Number of releases: 2
+  2025-12-02 14:12:18+00:00 | awardUpdate | 0e3720f0-7075-4425-9fa2-138d626a83f3-874367
+  2025-12-02 14:12:18+00:00 | awardUpdate | 0e3720f0-7075-4425-9fa2-138d626a83f3-874367
+
+OCID: ocds-b5fd17-891c3009-a394-471b-99e5-a952937f84c3
+Number of releases: 2
+  2025-06-02 14:51:12+00:00 | awardUpdate | 55eefad4-9d2c-468a-bd90-a29c18bcec20-847761
+  2025-06-02 14:51:12+00:00 | awardUpdate | 55eefad4-9d2c-468a-bd90-a29c18bcec20-847761
+
+OCID: ocds-b5fd17-49e4abf1-2c8a-4889-b46b-04abfeccb6c1
+Number of releases: 2
+  2025-12-09 14:04:39+00:00 | planning | 1c008db4-4a27-47fb-8a4e-444a5570b368-874771
+  2025-12-09 14:04:39+00:00 | planning | 1c008db4-4a27-47fb-8a4e-444a5570b368-874771
+
+OCID: ocds-b5fd17-66135e29-a7cf-423d-9fa9-493665580131
+Number of releases: 2
+  2025-01-16 12:23:19+00:00 | tender | e91651aa-9e21-4159-ae91-940ab98c252b-817721
+  2025-01-16 12:23:19+00:00 | tender | e91651aa-9e21-4159-ae91-940ab98c252b-817721
+
+OCID: ocds-b5fd17-35470545-b6fb-4041-91fb-013daa1cb0f9
+Number of releases: 2
+  2025-08-15 10:18:39+00:00 | tenderAmendment | 7441088a-57ee-4397-b860-d482077a768c-859217
+  2025-08-15 10:18:39+00:00 | tenderAmendment | 7441088a-57ee-4397-b860-d482077a768c-859217
+
+OCID: ocds-b5fd17-3c68d757-04a4-4105-af55-8728e9d77bdd
+Number of releases: 2
+  2025-03-04 09:52:40+00:00 | planning | 45428d10-07c6-4505-b0c2-bbc79f33992a-831576
+  2025-03-04 09:52:40+00:00 | planning | 45428d10-07c6-4505-b0c2-bbc79f33992a-831576
+
+OCID: ocds-b5fd17-1022e94e-b169-47fb-b6c2-220160ec9a4d
+Number of releases: 2
+  2025-01-22 10:37:14+00:00 | awardUpdate | 547d3bf8-331b-44d5-8320-489953c4469f-819295
+  2025-01-22 10:37:14+00:00 | awardUpdate | 547d3bf8-331b-44d5-8320-489953c4469f-819295
+
+======================================================================
+5. RELEASE TAG SEQUENCES
+======================================================================
+
+Most common lifecycle sequences:
+  41,388  award
+   4,240  tender
+   1,724  awardUpdate
+     970  awardUpdate -> awardUpdate
+     852  planning
+     460  tenderAmendment -> tenderAmendment
+     387  tenderAmendment
+     208  tender -> tender
+     114  planning -> planning
+       7  award -> award
+       4  tender -> award
+       3  tenderAmendment -> award
+       2  award -> awardUpdate
+
+======================================================================
+6. REPEATED RELEASE IDs
+======================================================================
+Unique release IDs:       50,380
+Repeated release IDs:     1,747
+Rows involved in repeats: 3,494
+
+======================================================================
+7. REPEATED RELEASE ID INVESTIGATION
+======================================================================
+
+First 20 repeated release IDs:
+
+Release ID: b3934ac0-cb1b-4681-a481-13424618daeb-867907
+                                 release_id                                             ocid              release_date release_tag                      tender_id                                                                                                             tender_title  buyer_id                            buyer_name tender_status  tender_value procurement_method procurement_category                          source_file
+b3934ac0-cb1b-4681-a481-13424618daeb-867907 ocds-b5fd17-ad89e6fb-e5d8-4823-9a19-92dc5c477c25 2025-10-13 12:47:48+00:00 awardUpdate IT-230-9718-SMBC 25024 - AWARD FURTHER COMPETITION conducted under ESPO Framework Agreement 220_24 De-icing Salt & Associated Products/Services - AWARD GB-CFS-16 Sandwell Metropolitan Borough Council      complete           NaN          selective                goods Contracts Finder OCDS 2025-10-10.csv
+b3934ac0-cb1b-4681-a481-13424618daeb-867907 ocds-b5fd17-ad89e6fb-e5d8-4823-9a19-92dc5c477c25 2025-10-13 12:47:48+00:00 awardUpdate IT-230-9718-SMBC 25024 - AWARD FURTHER COMPETITION conducted under ESPO Framework Agreement 220_24 De-icing Salt & Associated Products/Services - AWARD GB-CFS-16 Sandwell Metropolitan Borough Council      complete           NaN          selective                goods Contracts Finder OCDS 2025-10-13.csv
+
+Release ID: 4fcce0c6-138b-4482-978f-de2202c90500-819229
+                                 release_id                                             ocid              release_date release_tag                               tender_id                            tender_title                                     buyer_id                           buyer_name tender_status  tender_value procurement_method procurement_category                          source_file
+4fcce0c6-138b-4482-978f-de2202c90500-819229 ocds-b5fd17-35ff192f-9236-476d-a08e-3ce62c65fd38 2025-01-22 09:10:41+00:00    planning CRML0001 - Herefordshire - Civils Works CRML0001 - Herefordshire - Civils Works GB-SRS-sid4gov.cabinetoffice.gov.uk/vFm2UsHa BALFOUR BEATTY LIVING PLACES LIMITED      planning           NaN                NaN                  NaN Contracts Finder OCDS 2025-01-20.csv
+4fcce0c6-138b-4482-978f-de2202c90500-819229 ocds-b5fd17-35ff192f-9236-476d-a08e-3ce62c65fd38 2025-01-22 09:10:41+00:00    planning CRML0001 - Herefordshire - Civils Works CRML0001 - Herefordshire - Civils Works GB-SRS-sid4gov.cabinetoffice.gov.uk/vFm2UsHa BALFOUR BEATTY LIVING PLACES LIMITED      planning           NaN                NaN                  NaN Contracts Finder OCDS 2025-01-22.csv
+
+Release ID: dc557adf-eaa2-4d0a-af2f-7e5a3505639a-826704
+                                 release_id                                             ocid              release_date     release_tag     tender_id                                        tender_title      buyer_id                   buyer_name tender_status  tender_value procurement_method procurement_category                          source_file
+dc557adf-eaa2-4d0a-af2f-7e5a3505639a-826704 ocds-b5fd17-a8747770-3f43-43be-b08c-61f9ac5fac35 2025-02-14 15:09:06+00:00 tenderAmendment IT-591-5-1077 Independent Sexual Violence Advisor (ISVA) Services GB-CFS-294534 Gloucestershire Constabulary        active     7000000.0               open             services Contracts Finder OCDS 2025-01-20.csv
+dc557adf-eaa2-4d0a-af2f-7e5a3505639a-826704 ocds-b5fd17-a8747770-3f43-43be-b08c-61f9ac5fac35 2025-02-14 15:09:06+00:00 tenderAmendment IT-591-5-1077 Independent Sexual Violence Advisor (ISVA) Services GB-CFS-294534 Gloucestershire Constabulary        active     7000000.0               open             services Contracts Finder OCDS 2025-02-14.csv
+
+Release ID: 405cfd6a-b4ba-4e61-b8ed-4bb253c33100-825762
+                                 release_id                                             ocid              release_date release_tag            tender_id                                        tender_title                                     buyer_id               buyer_name tender_status  tender_value procurement_method procurement_category                          source_file
+405cfd6a-b4ba-4e61-b8ed-4bb253c33100-825762 ocds-b5fd17-d2d666b1-6273-418c-8dff-29c3767d1657 2025-02-12 15:34:21+00:00    planning 063638- EC09/01/3620 Southampton Early Advice and Support (SEAS) service GB-SRS-sid4gov.cabinetoffice.gov.uk/jxfb36Bw Southampton City Council      planning           NaN                NaN                  NaN Contracts Finder OCDS 2025-01-20.csv
+405cfd6a-b4ba-4e61-b8ed-4bb253c33100-825762 ocds-b5fd17-d2d666b1-6273-418c-8dff-29c3767d1657 2025-02-12 15:34:21+00:00    planning 063638- EC09/01/3620 Southampton Early Advice and Support (SEAS) service GB-SRS-sid4gov.cabinetoffice.gov.uk/jxfb36Bw Southampton City Council      planning           NaN                NaN                  NaN Contracts Finder OCDS 2025-02-12.csv
+
+Release ID: 32ed3564-940e-46e3-ba7c-09717ae07eb2-825702
+                                 release_id                                             ocid              release_date     release_tag             tender_id                                                             tender_title      buyer_id                                  buyer_name tender_status  tender_value procurement_method procurement_category                          source_file
+32ed3564-940e-46e3-ba7c-09717ae07eb2-825702 ocds-b5fd17-7cb90cf6-ee3e-4f58-af6a-8fb4f1531524 2025-02-12 14:19:48+00:00 tenderAmendment tender_355465/1443600 Notice for Strengthening Higher Education for Female Empowerment (SHEFE) GB-CFS-181125 Foreign Commonwealth and Development Office        active    41000000.0               open             services Contracts Finder OCDS 2025-01-20.csv
+32ed3564-940e-46e3-ba7c-09717ae07eb2-825702 ocds-b5fd17-7cb90cf6-ee3e-4f58-af6a-8fb4f1531524 2025-02-12 14:19:48+00:00 tenderAmendment tender_355465/1443600 Notice for Strengthening Higher Education for Female Empowerment (SHEFE) GB-CFS-181125 Foreign Commonwealth and Development Office        active    41000000.0               open             services Contracts Finder OCDS 2025-02-12.csv
+
+Release ID: e2b704d7-32fe-4d40-a40b-b012f2d3c443-825424
+                                 release_id                                             ocid              release_date release_tag                  tender_id                                                                             tender_title     buyer_id        buyer_name tender_status  tender_value procurement_method procurement_category                          source_file
+e2b704d7-32fe-4d40-a40b-b012f2d3c443-825424 ocds-b5fd17-b1726f6e-9e2b-4dc3-bf97-9847a7535dec 2025-02-11 17:22:52+00:00      tender BLACK001-DN759482-74484598 LEVI: Delivery of a Car Park-based Electric Vehicle Infrastructure Solution in Blackpool GB-CFS-50870 Blackpool Council        active     4000000.0          selective                goods Contracts Finder OCDS 2025-01-20.csv
+e2b704d7-32fe-4d40-a40b-b012f2d3c443-825424 ocds-b5fd17-b1726f6e-9e2b-4dc3-bf97-9847a7535dec 2025-02-11 17:22:52+00:00      tender BLACK001-DN759482-74484598 LEVI: Delivery of a Car Park-based Electric Vehicle Infrastructure Solution in Blackpool GB-CFS-50870 Blackpool Council        active     4000000.0          selective                goods Contracts Finder OCDS 2025-02-11.csv
+
+Release ID: 3e560915-f9e3-4b0d-a6a8-bb98547b82a4-825265
+                                 release_id                                             ocid              release_date release_tag   tender_id                                                                                                tender_title                                     buyer_id                  buyer_name tender_status  tender_value procurement_method procurement_category                          source_file
+3e560915-f9e3-4b0d-a6a8-bb98547b82a4-825265 ocds-b5fd17-c5879bba-6ec8-4876-b3a9-97d157a8b369 2025-02-11 13:13:18+00:00 awardUpdate GLD067 2024 Outsourcing litigation and legal process works for DWP MOJ,  Home office and Rural Payments Authority (RPA) GB-SRS-sid4gov.cabinetoffice.gov.uk/NDfF5Gvb Government Legal Department      complete     1250000.0          selective             services Contracts Finder OCDS 2025-01-20.csv
+3e560915-f9e3-4b0d-a6a8-bb98547b82a4-825265 ocds-b5fd17-c5879bba-6ec8-4876-b3a9-97d157a8b369 2025-02-11 13:13:18+00:00 awardUpdate GLD067 2024 Outsourcing litigation and legal process works for DWP MOJ,  Home office and Rural Payments Authority (RPA) GB-SRS-sid4gov.cabinetoffice.gov.uk/NDfF5Gvb Government Legal Department      complete     1250000.0          selective             services Contracts Finder OCDS 2025-02-11.csv
+
+Release ID: db17c94c-bd9c-4afd-95b4-6a51e6785d9a-821465
+                                 release_id                                             ocid              release_date release_tag                  tender_id                                                          tender_title     buyer_id             buyer_name tender_status  tender_value procurement_method procurement_category                          source_file
+db17c94c-bd9c-4afd-95b4-6a51e6785d9a-821465 ocds-b5fd17-6b933946-e5e3-4bdb-9d54-c601d75dfbd1 2025-01-29 15:31:13+00:00      tender KBPDOVER-DN759736-48347153 Supply, Implementation of a Customer Relationship Management Solution GB-CFS-59659 Dover District Council        active      500000.0               open                goods Contracts Finder OCDS 2025-01-20.csv
+db17c94c-bd9c-4afd-95b4-6a51e6785d9a-821465 ocds-b5fd17-6b933946-e5e3-4bdb-9d54-c601d75dfbd1 2025-01-29 15:31:13+00:00      tender KBPDOVER-DN759736-48347153 Supply, Implementation of a Customer Relationship Management Solution GB-CFS-59659 Dover District Council        active      500000.0               open                goods Contracts Finder OCDS 2025-01-29.csv
+
+Release ID: be1b7542-e37c-412d-b360-c746c9b12594-821464
+                                 release_id                                             ocid              release_date release_tag    tender_id              tender_title      buyer_id                      buyer_name tender_status  tender_value procurement_method procurement_category                          source_file
+be1b7542-e37c-412d-b360-c746c9b12594-821464 ocds-b5fd17-c28d2194-3aa2-4bf8-8131-5905030819fc 2025-01-29 15:25:04+00:00 awardUpdate BIP918777448 Heating Systems Framework GB-CFS-307081 Places for People Group Limited      complete    20000000.0               open                works Contracts Finder OCDS 2025-01-20.csv
+be1b7542-e37c-412d-b360-c746c9b12594-821464 ocds-b5fd17-c28d2194-3aa2-4bf8-8131-5905030819fc 2025-01-29 15:25:04+00:00 awardUpdate BIP918777448 Heating Systems Framework GB-CFS-307081 Places for People Group Limited      complete    20000000.0               open                works Contracts Finder OCDS 2025-01-29.csv
+
+Release ID: c8954420-5667-47ca-b3d4-93097013cce4-819655
+                                 release_id                                             ocid              release_date release_tag            tender_id                                 tender_title                                     buyer_id     buyer_name tender_status  tender_value procurement_method procurement_category                          source_file
+c8954420-5667-47ca-b3d4-93097013cce4-819655 ocds-b5fd17-cdf34744-33fe-4041-a236-0a185e431192 2025-01-23 09:59:32+00:00 awardUpdate BankAcc verification Bank Account Ownership Verification Services GB-SRS-sid4gov.cabinetoffice.gov.uk/3A4AmUm4 Cabinet Office      complete      18293.34          selective             services Contracts Finder OCDS 2025-01-20.csv
+c8954420-5667-47ca-b3d4-93097013cce4-819655 ocds-b5fd17-cdf34744-33fe-4041-a236-0a185e431192 2025-01-23 09:59:32+00:00 awardUpdate BankAcc verification Bank Account Ownership Verification Services GB-SRS-sid4gov.cabinetoffice.gov.uk/3A4AmUm4 Cabinet Office      complete      18293.34          selective             services Contracts Finder OCDS 2025-01-23.csv
+
+Release ID: 8edb5bd1-9e83-4164-8c23-d2cc152e468d-819373
+                                 release_id                                             ocid              release_date release_tag                  tender_id                                                                   tender_title      buyer_id                buyer_name tender_status  tender_value procurement_method procurement_category                          source_file
+8edb5bd1-9e83-4164-8c23-d2cc152e468d-819373 ocds-b5fd17-8a3f0774-b1a9-4f58-a8ba-4f0e23a993ff 2025-01-22 12:34:06+00:00      tender LBROM001-DN759762-10627619 Multi Disciplinary Consultancy Services Beckenham Car Park Housing Development GB-CFS-307101 London Borough of Bromley        active      669000.0               open             services Contracts Finder OCDS 2025-01-20.csv
+8edb5bd1-9e83-4164-8c23-d2cc152e468d-819373 ocds-b5fd17-8a3f0774-b1a9-4f58-a8ba-4f0e23a993ff 2025-01-22 12:34:06+00:00      tender LBROM001-DN759762-10627619 Multi Disciplinary Consultancy Services Beckenham Car Park Housing Development GB-CFS-307101 London Borough of Bromley        active      669000.0               open             services Contracts Finder OCDS 2025-01-22.csv
+
+Release ID: 43412ee4-2230-40ad-8cae-11b8dfc5c934-819363
+                                 release_id                                             ocid              release_date     release_tag tender_id                 tender_title                                                  buyer_id         buyer_name tender_status  tender_value procurement_method procurement_category                          source_file
+43412ee4-2230-40ad-8cae-11b8dfc5c934-819363 ocds-b5fd17-c3d1553d-9bda-430e-8f7f-963bdb3ec3aa 2025-01-22 12:20:22+00:00 tenderAmendment    AIRCON Air Conditioning Maintenance GB-SRS-supplierregistration.cabinetoffice.gov.uk/YTAK65b5 TUDOR PARK LIMITED        active        6000.0            limited             services Contracts Finder OCDS 2025-01-20.csv
+43412ee4-2230-40ad-8cae-11b8dfc5c934-819363 ocds-b5fd17-c3d1553d-9bda-430e-8f7f-963bdb3ec3aa 2025-01-22 12:20:22+00:00 tenderAmendment    AIRCON Air Conditioning Maintenance GB-SRS-supplierregistration.cabinetoffice.gov.uk/YTAK65b5 TUDOR PARK LIMITED        active        6000.0            limited             services Contracts Finder OCDS 2025-01-22.csv
+
+Release ID: 547d3bf8-331b-44d5-8320-489953c4469f-819295
+                                 release_id                                             ocid              release_date release_tag             tender_id                        tender_title      buyer_id          buyer_name tender_status  tender_value procurement_method procurement_category                          source_file
+547d3bf8-331b-44d5-8320-489953c4469f-819295 ocds-b5fd17-1022e94e-b169-47fb-b6c2-220160ec9a4d 2025-01-22 10:37:14+00:00 awardUpdate tender_353178/1443411 End User Services (Secret) - EUS(S) GB-CFS-240978 Ministry of Defence      complete   76302312.28                NaN             services Contracts Finder OCDS 2025-01-20.csv
+547d3bf8-331b-44d5-8320-489953c4469f-819295 ocds-b5fd17-1022e94e-b169-47fb-b6c2-220160ec9a4d 2025-01-22 10:37:14+00:00 awardUpdate tender_353178/1443411 End User Services (Secret) - EUS(S) GB-CFS-240978 Ministry of Defence      complete   76302312.28                NaN             services Contracts Finder OCDS 2025-01-22.csv
+
+Release ID: 9067d4ac-ea5c-4ced-bf08-8103d8415e08-819131
+                                 release_id                                             ocid              release_date release_tag                tender_id                                         tender_title      buyer_id                 buyer_name tender_status  tender_value procurement_method procurement_category                          source_file
+9067d4ac-ea5c-4ced-bf08-8103d8415e08-819131 ocds-b5fd17-e8e5cd39-5119-4c56-88c3-164a79aade02 2025-01-21 16:09:45+00:00      tender WHA001-DN759413-76958735 Phase 1 Cladding and Remedial Works - Pillfold House GB-CFS-307102 Wandle Housing Association        active     1500000.0               open                works Contracts Finder OCDS 2025-01-20.csv
+9067d4ac-ea5c-4ced-bf08-8103d8415e08-819131 ocds-b5fd17-e8e5cd39-5119-4c56-88c3-164a79aade02 2025-01-21 16:09:45+00:00      tender WHA001-DN759413-76958735 Phase 1 Cladding and Remedial Works - Pillfold House GB-CFS-307102 Wandle Housing Association        active     1500000.0               open                works Contracts Finder OCDS 2025-01-21.csv
+
+Release ID: e744ce93-dc6c-4856-8ebc-2f4fb2a33151-820369
+                                 release_id                                             ocid              release_date release_tag tender_id    tender_title                                     buyer_id                          buyer_name tender_status  tender_value procurement_method procurement_category                          source_file
+e744ce93-dc6c-4856-8ebc-2f4fb2a33151-820369 ocds-b5fd17-88c7736a-1cd8-4f74-b7ba-7ec135be9f1a 2025-01-27 09:46:28+00:00 awardUpdate DDaT25044 VMWare licenses GB-SRS-sid4gov.cabinetoffice.gov.uk/dXGP288m UK SHARED BUSINESS SERVICES LIMITED      complete      39137.28            limited                goods Contracts Finder OCDS 2025-01-24.csv
+e744ce93-dc6c-4856-8ebc-2f4fb2a33151-820369 ocds-b5fd17-88c7736a-1cd8-4f74-b7ba-7ec135be9f1a 2025-01-27 09:46:28+00:00 awardUpdate DDaT25044 VMWare licenses GB-SRS-sid4gov.cabinetoffice.gov.uk/dXGP288m UK SHARED BUSINESS SERVICES LIMITED      complete      39137.28            limited                goods Contracts Finder OCDS 2025-01-27.csv
+
+Release ID: 249581f4-96ea-41c7-938c-1cde94c55e75-819040
+                                 release_id                                             ocid              release_date     release_tag            tender_id                                                    tender_title      buyer_id          buyer_name tender_status  tender_value procurement_method procurement_category                          source_file
+249581f4-96ea-41c7-938c-1cde94c55e75-819040 ocds-b5fd17-7c07aa23-c23e-4137-8b38-ba97cbf251bb 2025-01-21 14:39:52+00:00 tenderAmendment IT-515-23-INT-TTCT24 Installation of New External Wall Cladding at The Manor Academy GB-CFS-188528 In-Tend e-Tendering        active           NaN               open                works Contracts Finder OCDS 2025-01-20.csv
+249581f4-96ea-41c7-938c-1cde94c55e75-819040 ocds-b5fd17-7c07aa23-c23e-4137-8b38-ba97cbf251bb 2025-01-21 14:39:52+00:00 tenderAmendment IT-515-23-INT-TTCT24 Installation of New External Wall Cladding at The Manor Academy GB-CFS-188528 In-Tend e-Tendering        active           NaN               open                works Contracts Finder OCDS 2025-01-21.csv
+
+Release ID: 7b90c065-919e-4890-ac4f-380adc9f572c-830031
+                                 release_id                                             ocid              release_date     release_tag             tender_id                                              tender_title     buyer_id               buyer_name tender_status  tender_value procurement_method procurement_category                          source_file
+7b90c065-919e-4890-ac4f-380adc9f572c-830031 ocds-b5fd17-da2e26aa-a900-4d33-b289-7a23b145efd4 2025-02-24 15:51:53+00:00 tenderAmendment tender_478436/1453820 CPD on Supporting Struggling Readers in Secondary Schools GB-CFS-99308 Department for Education        active      700000.0               open             services Contracts Finder OCDS 2025-02-21.csv
+7b90c065-919e-4890-ac4f-380adc9f572c-830031 ocds-b5fd17-da2e26aa-a900-4d33-b289-7a23b145efd4 2025-02-24 15:51:53+00:00 tenderAmendment tender_478436/1453820 CPD on Supporting Struggling Readers in Secondary Schools GB-CFS-99308 Department for Education        active      700000.0               open             services Contracts Finder OCDS 2025-02-24.csv
+
+Release ID: 95b84f7a-db68-496f-8401-04755004da83-830040
+                                 release_id                                             ocid              release_date release_tag                 tender_id                        tender_title                                     buyer_id        buyer_name tender_status  tender_value procurement_method procurement_category                          source_file
+95b84f7a-db68-496f-8401-04755004da83-830040 ocds-b5fd17-2333cac1-7636-464d-afb7-efd33bed4d7e 2025-02-24 16:21:59+00:00 awardUpdate OREC001-DN764729-39102364 Foundation Design Review - ORE25009 GB-SRS-sid4gov.cabinetoffice.gov.uk/KBjk77yF DUE NORTH LIMITED      complete       30000.0                NaN             services Contracts Finder OCDS 2025-02-21.csv
+95b84f7a-db68-496f-8401-04755004da83-830040 ocds-b5fd17-2333cac1-7636-464d-afb7-efd33bed4d7e 2025-02-24 16:21:59+00:00 awardUpdate OREC001-DN764729-39102364 Foundation Design Review - ORE25009 GB-SRS-sid4gov.cabinetoffice.gov.uk/KBjk77yF DUE NORTH LIMITED      complete       30000.0                NaN             services Contracts Finder OCDS 2025-02-24.csv
+
+Release ID: 5453ed55-07dc-4103-b16e-9bcd509e3109-830098
+                                 release_id                                             ocid              release_date release_tag                  tender_id                                                                             tender_title      buyer_id            buyer_name tender_status  tender_value procurement_method procurement_category                          source_file
+5453ed55-07dc-4103-b16e-9bcd509e3109-830098 ocds-b5fd17-7f33ddfd-5e8d-4a7e-9ed3-e8d6ee35682e 2025-02-25 08:26:59+00:00      tender SOSBC001-DN582385-55361284 SCC - Design and Build of Affordable Dwellings at Lundy Close, Eastwood, Southend-on-Sea GB-CFS-242141 Southend City Council        active     2600000.0               open                works Contracts Finder OCDS 2025-02-21.csv
+5453ed55-07dc-4103-b16e-9bcd509e3109-830098 ocds-b5fd17-7f33ddfd-5e8d-4a7e-9ed3-e8d6ee35682e 2025-02-25 08:26:59+00:00      tender SOSBC001-DN582385-55361284 SCC - Design and Build of Affordable Dwellings at Lundy Close, Eastwood, Southend-on-Sea GB-CFS-242141 Southend City Council        active     2600000.0               open                works Contracts Finder OCDS 2025-02-25.csv
+
+Release ID: 5fad6120-7bb8-40f4-8d8e-2e885eb7d933-830118
+                                 release_id                                             ocid              release_date release_tag                  tender_id                        tender_title      buyer_id         buyer_name tender_status  tender_value procurement_method procurement_category                          source_file
+5fad6120-7bb8-40f4-8d8e-2e885eb7d933-830118 ocds-b5fd17-fd318ba8-bea0-4d82-9742-d853fcc4186c 2025-02-25 09:55:32+00:00      tender CF-0464600D8d000003VQwdEAG ALDT and the Land Drainage Act 1991 GB-CFS-310736 Environment Agency        active      300000.0               open             services Contracts Finder OCDS 2025-02-21.csv
+5fad6120-7bb8-40f4-8d8e-2e885eb7d933-830118 ocds-b5fd17-fd318ba8-bea0-4d82-9742-d853fcc4186c 2025-02-25 09:55:32+00:00      tender CF-0464600D8d000003VQwdEAG ALDT and the Land Drainage Act 1991 GB-CFS-310736 Environment Agency        active      300000.0               open             services Contracts Finder OCDS 2025-02-25.csv
+
+======================================================================
+8. DUPLICATE CLASSIFICATION
+======================================================================
+Repeated IDs with identical key fields: 1,747
+Repeated IDs with changed key fields:   0
+Total repeated IDs investigated:         1,747
+
+======================================================================
+9. SAME OCID + SAME RELEASE TAG
+======================================================================
+OCID/tag combinations occurring more than once: 1,759
+
+Top repeated OCID/tag combinations:
+    2 | awardUpdate | ocds-b5fd17-000f2534-429a-4a62-a31d-feb8176fbb03
+    2 | tenderAmendment | ocds-b5fd17-002da71f-5afb-4a23-9480-411b7efc2b4f
+    2 | awardUpdate | ocds-b5fd17-004f1e1d-b461-4bc3-873e-b4d3f7070c26
+    2 | tenderAmendment | ocds-b5fd17-005994a4-1aa9-4d8d-9ff3-59f7df0d0ddf
+    2 | awardUpdate | ocds-b5fd17-005ebb1e-279f-4dbc-8f99-de0d433e64d4
+    2 | tenderAmendment | ocds-b5fd17-006c0e1c-43cf-49a7-9bfc-e4326f08d2cc
+    2 | tenderAmendment | ocds-b5fd17-00adcea0-3d79-4c66-8be4-b49fb8a5ce3e
+    2 | awardUpdate | ocds-b5fd17-00f01823-6cfc-4aec-863f-88d31bac8d34
+    2 | awardUpdate | ocds-b5fd17-0125a5d7-d6c2-4bfc-b989-8beb43bc5421
+    2 | tenderAmendment | ocds-b5fd17-01478bd1-dda7-457b-8cd1-1aac9ee52a10
+    2 | tender | ocds-b5fd17-01631802-25e4-4b44-9b27-198303541067
+    2 | tenderAmendment | ocds-b5fd17-01828cbf-f905-4f98-a145-7a1a4be7bcd8
+    2 | planning | ocds-b5fd17-019ef2f4-4ab2-46cc-8617-229d63e5ce06
+    2 | tenderAmendment | ocds-b5fd17-01a858bd-f5b6-4c5f-bcbc-150997484d3f
+    2 | awardUpdate | ocds-b5fd17-01bff134-2a8e-4e07-81be-860fad2aed7e
+    2 | awardUpdate | ocds-b5fd17-0212e3fc-ae4a-4eae-b0ef-5aa6c66e3aeb
+    2 | awardUpdate | ocds-b5fd17-022a7abf-b18f-445e-8997-38a08859ae37
+    2 | awardUpdate | ocds-b5fd17-022ef4cd-a064-4d29-8ef3-af1a062834b8
+    2 | tender | ocds-b5fd17-0235ba55-3767-4f51-ab20-b121df051340
+    2 | tenderAmendment | ocds-b5fd17-02389af8-ae24-4664-b689-c18f3d2701e2
+
+======================================================================
+10. AWARD LIFECYCLE
+======================================================================
+Award statuses:
+  active                      46,085 (100.00%)
+
+======================================================================
+11. AWARDS PER PROCUREMENT
+======================================================================
+OCIDs with awards: 44,098
+Maximum awards for one OCID: 100
+OCIDs with multiple awards: 1,140
+
+======================================================================
+12. REPEATED AWARD IDs
+======================================================================
+Unique award IDs: 45,012
+Repeated award IDs: 1,073
+
+Examples:
+
+Award ID: ocds-b5fd17-d115ac1e-3d95-48f6-9987-97023636d90b-2
+                                          award_id                                             ocid                                  release_id                award_date award_status  award_value                          source_file
+ocds-b5fd17-d115ac1e-3d95-48f6-9987-97023636d90b-2 ocds-b5fd17-d115ac1e-3d95-48f6-9987-97023636d90b 6ff88d59-3f5c-4098-9ada-c5f1c699f0e9-843659 2025-03-12 00:00:00+00:00       active    7809234.0 Contracts Finder OCDS 2025-04-25.csv
+ocds-b5fd17-d115ac1e-3d95-48f6-9987-97023636d90b-2 ocds-b5fd17-d115ac1e-3d95-48f6-9987-97023636d90b 6ff88d59-3f5c-4098-9ada-c5f1c699f0e9-843659 2025-03-12 00:00:00+00:00       active    7809234.0 Contracts Finder OCDS 2025-05-02.csv
+
+Award ID: ocds-b5fd17-a2389aa6-d201-417d-ab48-980f35c9d81f-1
+                                          award_id                                             ocid                                  release_id                award_date award_status  award_value                          source_file
+ocds-b5fd17-a2389aa6-d201-417d-ab48-980f35c9d81f-1 ocds-b5fd17-a2389aa6-d201-417d-ab48-980f35c9d81f 4bc86bd2-875d-457b-b78b-4281c13e5b7a-866096 2025-01-07 00:00:00+00:00       active     266130.6 Contracts Finder OCDS 2025-01-20.csv
+ocds-b5fd17-a2389aa6-d201-417d-ab48-980f35c9d81f-1 ocds-b5fd17-a2389aa6-d201-417d-ab48-980f35c9d81f 4bc86bd2-875d-457b-b78b-4281c13e5b7a-866096 2025-01-07 00:00:00+00:00       active     266130.6 Contracts Finder OCDS 2025-09-30.csv
+
+Award ID: ocds-b5fd17-edccbf13-a607-4056-a2f2-04804b5d70af-1
+                                          award_id                                             ocid                                  release_id                award_date award_status  award_value                          source_file
+ocds-b5fd17-edccbf13-a607-4056-a2f2-04804b5d70af-1 ocds-b5fd17-edccbf13-a607-4056-a2f2-04804b5d70af 0b8a0c93-bad3-4819-ab6c-c26f196ad9a1-843734 2024-02-28 00:00:00+00:00       active     198735.0 Contracts Finder OCDS 2025-01-20.csv
+ocds-b5fd17-edccbf13-a607-4056-a2f2-04804b5d70af-1 ocds-b5fd17-edccbf13-a607-4056-a2f2-04804b5d70af 0b8a0c93-bad3-4819-ab6c-c26f196ad9a1-843734 2024-02-28 00:00:00+00:00       active     198735.0 Contracts Finder OCDS 2025-05-06.csv
+
+Award ID: ocds-b5fd17-a19c9b69-c21b-4a6c-917e-01d5c4e0b521-1
+                                          award_id                                             ocid                                  release_id                award_date award_status  award_value                          source_file
+ocds-b5fd17-a19c9b69-c21b-4a6c-917e-01d5c4e0b521-1 ocds-b5fd17-a19c9b69-c21b-4a6c-917e-01d5c4e0b521 ef37a4f6-4d43-4aa4-b31b-c35777b0a472-840469 2025-04-13 23:00:00+00:00       active    486308.49 Contracts Finder OCDS 2025-01-20.csv
+ocds-b5fd17-a19c9b69-c21b-4a6c-917e-01d5c4e0b521-1 ocds-b5fd17-a19c9b69-c21b-4a6c-917e-01d5c4e0b521 ef37a4f6-4d43-4aa4-b31b-c35777b0a472-840469 2025-04-13 23:00:00+00:00       active    486308.49 Contracts Finder OCDS 2025-04-14.csv
+
+Award ID: ocds-b5fd17-12100338-186a-4e89-be54-c6918b5be09a-1
+                                          award_id                                             ocid                                  release_id                award_date award_status  award_value                          source_file
+ocds-b5fd17-12100338-186a-4e89-be54-c6918b5be09a-1 ocds-b5fd17-12100338-186a-4e89-be54-c6918b5be09a 96786390-6b79-45bd-a6c4-07e8d57f9936-837095 2025-01-06 00:00:00+00:00       active     38977.12 Contracts Finder OCDS 2025-01-20.csv
+ocds-b5fd17-12100338-186a-4e89-be54-c6918b5be09a-1 ocds-b5fd17-12100338-186a-4e89-be54-c6918b5be09a 96786390-6b79-45bd-a6c4-07e8d57f9936-837095 2025-01-06 00:00:00+00:00       active     38977.12 Contracts Finder OCDS 2025-03-28.csv
+
+Award ID: ocds-b5fd17-dab371ca-3e8d-4b0d-8e98-2d1d40ea7cee-1
+                                          award_id                                             ocid                                  release_id                award_date award_status  award_value                          source_file
+ocds-b5fd17-dab371ca-3e8d-4b0d-8e98-2d1d40ea7cee-1 ocds-b5fd17-dab371ca-3e8d-4b0d-8e98-2d1d40ea7cee 5bfdbdd6-faef-438b-9627-c6ea74d19de5-834736 2025-01-15 00:00:00+00:00       active     423000.0 Contracts Finder OCDS 2025-01-20.csv
+ocds-b5fd17-dab371ca-3e8d-4b0d-8e98-2d1d40ea7cee-1 ocds-b5fd17-dab371ca-3e8d-4b0d-8e98-2d1d40ea7cee 5bfdbdd6-faef-438b-9627-c6ea74d19de5-834736 2025-01-15 00:00:00+00:00       active     423000.0 Contracts Finder OCDS 2025-03-19.csv
+
+Award ID: ocds-b5fd17-7e5eded2-fc9c-4370-acdb-693884db877e-1
+                                          award_id                                             ocid                                  release_id                award_date award_status  award_value                          source_file
+ocds-b5fd17-7e5eded2-fc9c-4370-acdb-693884db877e-1 ocds-b5fd17-7e5eded2-fc9c-4370-acdb-693884db877e 5b1ecde2-f8a8-468f-8377-408707603995-865633 2025-09-08 23:00:00+00:00       active    1993250.0 Contracts Finder OCDS 2025-09-18.csv
+ocds-b5fd17-7e5eded2-fc9c-4370-acdb-693884db877e-1 ocds-b5fd17-7e5eded2-fc9c-4370-acdb-693884db877e 5b1ecde2-f8a8-468f-8377-408707603995-865633 2025-09-08 23:00:00+00:00       active    1993250.0 Contracts Finder OCDS 2025-09-26.csv
+
+Award ID: ocds-b5fd17-fc1f7221-3dc6-4581-9431-ef0f9e43de20-1
+                                          award_id                                             ocid                                  release_id                award_date award_status  award_value                          source_file
+ocds-b5fd17-fc1f7221-3dc6-4581-9431-ef0f9e43de20-1 ocds-b5fd17-fc1f7221-3dc6-4581-9431-ef0f9e43de20 ef471e15-3fa2-44bd-8cfa-9f5f156056e2-834274 2024-12-23 00:00:00+00:00       active    333326.36 Contracts Finder OCDS 2025-01-20.csv
+ocds-b5fd17-fc1f7221-3dc6-4581-9431-ef0f9e43de20-1 ocds-b5fd17-fc1f7221-3dc6-4581-9431-ef0f9e43de20 ef471e15-3fa2-44bd-8cfa-9f5f156056e2-834274 2024-12-23 00:00:00+00:00       active    333326.36 Contracts Finder OCDS 2025-03-18.csv
+
+Award ID: ocds-b5fd17-c5879bba-6ec8-4876-b3a9-97d157a8b369-1
+                                          award_id                                             ocid                                  release_id                award_date award_status  award_value                          source_file
+ocds-b5fd17-c5879bba-6ec8-4876-b3a9-97d157a8b369-1 ocds-b5fd17-c5879bba-6ec8-4876-b3a9-97d157a8b369 3e560915-f9e3-4b0d-a6a8-bb98547b82a4-825265 2024-10-19 23:00:00+00:00       active    1250000.0 Contracts Finder OCDS 2025-01-20.csv
+ocds-b5fd17-c5879bba-6ec8-4876-b3a9-97d157a8b369-1 ocds-b5fd17-c5879bba-6ec8-4876-b3a9-97d157a8b369 3e560915-f9e3-4b0d-a6a8-bb98547b82a4-825265 2024-10-19 23:00:00+00:00       active    1250000.0 Contracts Finder OCDS 2025-02-11.csv
+
+Award ID: ocds-b5fd17-c28d2194-3aa2-4bf8-8131-5905030819fc-1
+                                          award_id                                             ocid                                  release_id                award_date award_status  award_value                          source_file
+ocds-b5fd17-c28d2194-3aa2-4bf8-8131-5905030819fc-1 ocds-b5fd17-c28d2194-3aa2-4bf8-8131-5905030819fc be1b7542-e37c-412d-b360-c746c9b12594-821464 2024-12-17 00:00:00+00:00       active   20000000.0 Contracts Finder OCDS 2025-01-20.csv
+ocds-b5fd17-c28d2194-3aa2-4bf8-8131-5905030819fc-1 ocds-b5fd17-c28d2194-3aa2-4bf8-8131-5905030819fc be1b7542-e37c-412d-b360-c746c9b12594-821464 2024-12-17 00:00:00+00:00       active   20000000.0 Contracts Finder OCDS 2025-01-29.csv
+
+Award ID: ocds-b5fd17-cdf34744-33fe-4041-a236-0a185e431192-1
+                                          award_id                                             ocid                                  release_id                award_date award_status  award_value                          source_file
+ocds-b5fd17-cdf34744-33fe-4041-a236-0a185e431192-1 ocds-b5fd17-cdf34744-33fe-4041-a236-0a185e431192 c8954420-5667-47ca-b3d4-93097013cce4-819655 2024-03-31 00:00:00+00:00       active     18293.34 Contracts Finder OCDS 2025-01-20.csv
+ocds-b5fd17-cdf34744-33fe-4041-a236-0a185e431192-1 ocds-b5fd17-cdf34744-33fe-4041-a236-0a185e431192 c8954420-5667-47ca-b3d4-93097013cce4-819655 2024-03-31 00:00:00+00:00       active     18293.34 Contracts Finder OCDS 2025-01-23.csv
+
+Award ID: ocds-b5fd17-1022e94e-b169-47fb-b6c2-220160ec9a4d-1
+                                          award_id                                             ocid                                  release_id                award_date award_status  award_value                          source_file
+ocds-b5fd17-1022e94e-b169-47fb-b6c2-220160ec9a4d-1 ocds-b5fd17-1022e94e-b169-47fb-b6c2-220160ec9a4d 547d3bf8-331b-44d5-8320-489953c4469f-819295 2024-12-17 00:00:00+00:00       active  76302312.28 Contracts Finder OCDS 2025-01-20.csv
+ocds-b5fd17-1022e94e-b169-47fb-b6c2-220160ec9a4d-1 ocds-b5fd17-1022e94e-b169-47fb-b6c2-220160ec9a4d 547d3bf8-331b-44d5-8320-489953c4469f-819295 2024-12-17 00:00:00+00:00       active  76302312.28 Contracts Finder OCDS 2025-01-22.csv
+
+Award ID: ocds-b5fd17-d8ee1787-b5c9-4219-98d3-f17a949be4cf-1
+                                          award_id                                             ocid                                  release_id                award_date award_status  award_value                          source_file
+ocds-b5fd17-d8ee1787-b5c9-4219-98d3-f17a949be4cf-1 ocds-b5fd17-d8ee1787-b5c9-4219-98d3-f17a949be4cf 727dc0c1-0b76-4471-814b-2fd8229b132a-854806 2025-06-01 23:00:00+00:00       active     565350.2 Contracts Finder OCDS 2025-06-13.csv
+ocds-b5fd17-d8ee1787-b5c9-4219-98d3-f17a949be4cf-1 ocds-b5fd17-d8ee1787-b5c9-4219-98d3-f17a949be4cf 727dc0c1-0b76-4471-814b-2fd8229b132a-854806 2025-06-01 23:00:00+00:00       active     565350.2 Contracts Finder OCDS 2025-07-17.csv
+
+Award ID: ocds-b5fd17-e72a90e1-0365-4ecc-956e-c54970584492-2
+                                          award_id                                             ocid                                  release_id                award_date award_status  award_value                          source_file
+ocds-b5fd17-e72a90e1-0365-4ecc-956e-c54970584492-2 ocds-b5fd17-e72a90e1-0365-4ecc-956e-c54970584492 1750ac3d-8455-4baa-9e16-15731fdb5464-855262 2025-06-12 23:00:00+00:00       active      30000.0 Contracts Finder OCDS 2025-06-13.csv
+ocds-b5fd17-e72a90e1-0365-4ecc-956e-c54970584492-2 ocds-b5fd17-e72a90e1-0365-4ecc-956e-c54970584492 1750ac3d-8455-4baa-9e16-15731fdb5464-855262 2025-06-12 23:00:00+00:00       active      30000.0 Contracts Finder OCDS 2025-07-21.csv
+
+Award ID: ocds-b5fd17-509e8e15-6d6f-4df0-a776-5c63589e58fc-1
+                                          award_id                                             ocid                                  release_id                award_date award_status  award_value                          source_file
+ocds-b5fd17-509e8e15-6d6f-4df0-a776-5c63589e58fc-1 ocds-b5fd17-509e8e15-6d6f-4df0-a776-5c63589e58fc 0e9740b3-d5fb-4184-96d0-1a5e1e754dad-853304 2025-06-12 23:00:00+00:00       active         95.0 Contracts Finder OCDS 2025-06-13.csv
+ocds-b5fd17-509e8e15-6d6f-4df0-a776-5c63589e58fc-1 ocds-b5fd17-509e8e15-6d6f-4df0-a776-5c63589e58fc 0e9740b3-d5fb-4184-96d0-1a5e1e754dad-853304 2025-06-12 23:00:00+00:00       active         95.0 Contracts Finder OCDS 2025-07-31.csv
+
+Award ID: ocds-b5fd17-046247c5-e4d7-4254-8cb0-d9e9147c70c1-1
+                                          award_id                                             ocid                                  release_id                award_date award_status  award_value                          source_file
+ocds-b5fd17-046247c5-e4d7-4254-8cb0-d9e9147c70c1-1 ocds-b5fd17-046247c5-e4d7-4254-8cb0-d9e9147c70c1 7ab18588-6cc4-443b-bb95-a709e205feed-873156 2025-11-21 00:00:00+00:00       active          0.8 Contracts Finder OCDS 2025-06-13.csv
+ocds-b5fd17-046247c5-e4d7-4254-8cb0-d9e9147c70c1-1 ocds-b5fd17-046247c5-e4d7-4254-8cb0-d9e9147c70c1 7ab18588-6cc4-443b-bb95-a709e205feed-873156 2025-11-21 00:00:00+00:00       active          0.8 Contracts Finder OCDS 2025-11-21.csv
+
+Award ID: ocds-b5fd17-375fee19-0614-40b0-a6c1-1e37dbc80444-1
+                                          award_id                                             ocid                                  release_id                award_date award_status  award_value                          source_file
+ocds-b5fd17-375fee19-0614-40b0-a6c1-1e37dbc80444-1 ocds-b5fd17-375fee19-0614-40b0-a6c1-1e37dbc80444 44ef8b46-6c3a-4403-b055-a0f6f4c3ae90-874884 2025-03-28 00:00:00+00:00       active      96996.0 Contracts Finder OCDS 2025-04-10.csv
+ocds-b5fd17-375fee19-0614-40b0-a6c1-1e37dbc80444-1 ocds-b5fd17-375fee19-0614-40b0-a6c1-1e37dbc80444 44ef8b46-6c3a-4403-b055-a0f6f4c3ae90-874884 2025-03-28 00:00:00+00:00       active      96996.0 Contracts Finder OCDS 2025-12-05.csv
+
+Award ID: ocds-b5fd17-ec27fea9-b9e1-4c91-a6d4-5dd6eef78012-1
+                                          award_id                                             ocid                                  release_id                award_date award_status  award_value                          source_file
+ocds-b5fd17-ec27fea9-b9e1-4c91-a6d4-5dd6eef78012-1 ocds-b5fd17-ec27fea9-b9e1-4c91-a6d4-5dd6eef78012 ac9e1d68-3efc-4356-bd36-fd53766b9baf-842581 2025-03-27 00:00:00+00:00       active     120000.0 Contracts Finder OCDS 2025-04-10.csv
+ocds-b5fd17-ec27fea9-b9e1-4c91-a6d4-5dd6eef78012-1 ocds-b5fd17-ec27fea9-b9e1-4c91-a6d4-5dd6eef78012 ac9e1d68-3efc-4356-bd36-fd53766b9baf-842581 2025-03-27 00:00:00+00:00       active     120000.0 Contracts Finder OCDS 2025-04-28.csv
+
+Award ID: ocds-b5fd17-8371d928-4f1f-4600-b4ce-20682b7f8bf4-1
+                                          award_id                                             ocid                                  release_id                award_date award_status  award_value                          source_file
+ocds-b5fd17-8371d928-4f1f-4600-b4ce-20682b7f8bf4-1 ocds-b5fd17-8371d928-4f1f-4600-b4ce-20682b7f8bf4 b19af57a-9f27-4539-ac10-f87ec6367603-853495 2025-07-07 23:00:00+00:00       active      11340.0 Contracts Finder OCDS 2025-05-23.csv
+ocds-b5fd17-8371d928-4f1f-4600-b4ce-20682b7f8bf4-1 ocds-b5fd17-8371d928-4f1f-4600-b4ce-20682b7f8bf4 b19af57a-9f27-4539-ac10-f87ec6367603-853495 2025-07-07 23:00:00+00:00       active      11340.0 Contracts Finder OCDS 2025-07-08.csv
+
+Award ID: ocds-b5fd17-459fbce3-0f93-4de9-9497-37e0eb6a1c47-1
+                                          award_id                                             ocid                                  release_id                award_date award_status  award_value                          source_file
+ocds-b5fd17-459fbce3-0f93-4de9-9497-37e0eb6a1c47-1 ocds-b5fd17-459fbce3-0f93-4de9-9497-37e0eb6a1c47 b55ee8aa-b7ca-47fc-abd7-bdb898025198-848352 2025-03-30 00:00:00+00:00       active      35000.0 Contracts Finder OCDS 2025-05-23.csv
+ocds-b5fd17-459fbce3-0f93-4de9-9497-37e0eb6a1c47-1 ocds-b5fd17-459fbce3-0f93-4de9-9497-37e0eb6a1c47 b55ee8aa-b7ca-47fc-abd7-bdb898025198-848352 2025-03-30 00:00:00+00:00       active      35000.0 Contracts Finder OCDS 2025-06-05.csv
+
+======================================================================
+13. RELEASE-TO-AWARD LINKAGE
+======================================================================
+Releases with at least one award: 44,108
+Maximum awards linked to one release: 100
+Releases with multiple awards: 1,130
+
+======================================================================
+14. SUPPLIER RELATIONSHIP MULTIPLICITY
+======================================================================
+Awards with suppliers: 45,012
+Maximum suppliers linked to one award: 296
+Awards with multiple suppliers: 2,494
+
+======================================================================
+15. POTENTIAL DUPLICATE SUPPLIER RELATIONSHIPS
+======================================================================
+Repeated award-supplier combinations: 1,554
+
+Top examples:
+    2 occurrences | ('ocds-b5fd17-000f2534-429a-4a62-a31d-feb8176fbb03-1', 'GB-CFS-309748', 'Larkins Environmental Services')
+    2 occurrences | ('ocds-b5fd17-004f1e1d-b461-4bc3-873e-b4d3f7070c26-2', 'GB-CFS-326083', 'Cambridge and Huntingdon Airport Travel Service')
+    2 occurrences | ('ocds-b5fd17-005ebb1e-279f-4dbc-8f99-de0d433e64d4-1', 'GB-CFS-322792', 'William Gough and Sons Limited')
+    2 occurrences | ('ocds-b5fd17-00f01823-6cfc-4aec-863f-88d31bac8d34-1', 'GB-CFS-317136', 'R G Stones(Buildings)Ltd')
+    2 occurrences | ('ocds-b5fd17-0125a5d7-d6c2-4bfc-b989-8beb43bc5421-1', 'GB-CFS-110806', 'Beestons (Hadleigh) Limited')
+    2 occurrences | ('ocds-b5fd17-01bff134-2a8e-4e07-81be-860fad2aed7e-1', 'GB-CFS-311585', 'THE PUBLIC SERVICE CONSULTANTS LIMITED')
+    2 occurrences | ('ocds-b5fd17-0212e3fc-ae4a-4eae-b0ef-5aa6c66e3aeb-1', 'GB-CFS-323071', 'Apec Group Association')
+    2 occurrences | ('ocds-b5fd17-0212e3fc-ae4a-4eae-b0ef-5aa6c66e3aeb-1', 'GB-COH-06979957', 'Go Green Taxis Ltd')
+    2 occurrences | ('ocds-b5fd17-0212e3fc-ae4a-4eae-b0ef-5aa6c66e3aeb-1', 'GB-COH-08159818', 'The Oxfordshire Taxi Company Limited')
+    2 occurrences | ('ocds-b5fd17-0212e3fc-ae4a-4eae-b0ef-5aa6c66e3aeb-1', 'GB-COH-12764495', 'Pryors Corporate Travel Ltd')
+    2 occurrences | ('ocds-b5fd17-0212e3fc-ae4a-4eae-b0ef-5aa6c66e3aeb-1', 'GB-COH-6362005', '1st Class Travel UK Ltd')
+    2 occurrences | ('ocds-b5fd17-0212e3fc-ae4a-4eae-b0ef-5aa6c66e3aeb-1', 'GB-COH-9107007', 'Veezu Group Limited')
+    2 occurrences | ('ocds-b5fd17-022a7abf-b18f-445e-8997-38a08859ae37-1', 'GB-CFS-311978', 'Check Your Security')
+    2 occurrences | ('ocds-b5fd17-022ef4cd-a064-4d29-8ef3-af1a062834b8-1', 'GB-COH-SC477423', 'i3Works Ltd')
+    2 occurrences | ('ocds-b5fd17-025b8d43-6cc6-49cc-8da1-659c212f3555-1', 'GB-CFS-311715', 'Pick Everard')
+    2 occurrences | ('ocds-b5fd17-02b48263-3d48-4d4e-81fb-5c02b50c8d18-1', 'GB-CFS-319704', 'Beechwood Equipment Limited')
+    2 occurrences | ('ocds-b5fd17-02bd2266-6ff0-44c4-85c7-853d6f27e53f-1', 'GB-COH-04803377', 'Investigo Limited')
+    2 occurrences | ('ocds-b5fd17-02c8da17-fe63-43bf-a77f-3f9878cf2259-1', 'GB-CFS-321984', 'Six Property Consulting Ltd')
+    2 occurrences | ('ocds-b5fd17-02d64bb0-5913-4cbe-bca9-b66d5ba71539-1', 'GB-CFS-327514', 'Rainmaking Innovation')
+    2 occurrences | ('ocds-b5fd17-037f12a2-9827-4bb2-a81a-577da9c2d3c1-1', 'GB-COH-00330754', 'XEROX (UK) LIMITED')
+
+======================================================================
+16. INVESTIGATION INTERPRETATION
+======================================================================
+
+The investigation distinguishes between:
+
+1. Legitimate lifecycle records
+   - multiple releases for the same OCID
+   - tender, award, amendment and award-update events
+   - multiple awards associated with one procurement
+
+2. Potential duplicate records
+   - repeated release IDs
+   - repeated award IDs
+   - repeated award-supplier relationships
+
+No records are deleted by this investigation.
+
+The database should preserve legitimate lifecycle events and only
+remove records when duplication is demonstrated by the evidence.
+
+Recommended analytical principle:
+
+    PROCUREMENT
+        |
+        +-- RELEASE
+        |
+        +-- AWARD
+               |
+               +-- AWARD_SUPPLIER
+                      |
+                      +-- SUPPLIER
+
+Release-level lifecycle information should remain available for
+auditability and procurement-process analysis.

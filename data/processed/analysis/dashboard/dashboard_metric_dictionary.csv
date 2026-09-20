@@ -1,0 +1,11 @@
+metric,category,definition,unit,important_caveat
+allocated_award_value,Financial,Total award value represented in the final analytical dataset.,GBP,Not actual payments or expenditure.
+allocated_supplier_value,Supplier,Award value allocated across usable supplier relationships.,GBP,Multi-supplier awards are allocated equally across usable suppliers.
+supplier_concentration_top_1_percent,Supplier,Share of allocated supplier value represented by the top 1% of usable supplier entities.,%,Calculated only among awards with usable supplier relationships.
+buyer_activity,Buyer,Number of awards associated with a buyer entity.,Count,Buyer entity uses buyer_key rather than raw buyer name.
+buyer_allocated_value,Buyer,Total allocated award value associated with a buyer entity.,GBP,"Award value, not actual supplier payment."
+pri_score,Review,User-defined Procurement Review Indicator score.,Score,"Screening indicator only; not a fraud, corruption, wrongdoing, or probability score."
+pri_category,Review,PRI screening category.,Category,High/Priority records identify a review population; they do not establish wrongdoing.
+procurement_method,Procurement,Recorded procurement method.,Category,Missing method values are retained as Unknown.
+contract_duration_years,Contract,Calculated contract duration.,Years,Long duration alone is not evidence of a problem.
+supplier_identity_review_flag,Data quality,Supplier relationship requiring identity/name variation review.,Flag,Supplier identities should not be automatically merged.

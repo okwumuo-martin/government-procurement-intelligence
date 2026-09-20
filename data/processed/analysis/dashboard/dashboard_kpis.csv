@@ -1,0 +1,15 @@
+metric,value,definition
+unique_buyer_entities,5980.0,Unique buyer entities in the validated buyer-level analysis.
+total_awards,45011.0,Award records in the final analytical dataset.
+allocated_award_value,449812420123.59814,Award value represented in the analytical dataset; not actual payments.
+median_award_value,94268.285,Median allocated award value.
+mean_award_value,9994498.958441056,Mean allocated award value.
+maximum_award_value,35000000000.0,Maximum allocated award value.
+awards_with_missing_value,5.0,Awards with missing award value.
+priority_review_records,4.0,PRI records classified Priority; screening population only.
+high_review_records,51.0,PRI records classified High; screening population only.
+high_priority_review_records,55.0,Combined High and Priority PRI screening population.
+maximum_pri_score,6.0,Maximum Procurement Review Indicator score in the authoritative dataset.
+missing_procurement_method,7526.0,Awards missing procurement method.
+missing_procurement_category,975.0,Awards missing procurement category.
+missing_supplier_information,80.0,Awards without usable supplier information.

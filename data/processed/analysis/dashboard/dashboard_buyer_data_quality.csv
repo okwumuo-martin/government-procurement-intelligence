@@ -1,0 +1,8 @@
+metric,count
+Analytical award records,45011
+Unique buyer entities,5980
+Unique buyer names,2479
+Unique buyer IDs,5980
+Records with unknown buyer name,0
+Records without buyer ID,0
+Buyer entities with multiple buyer names,19

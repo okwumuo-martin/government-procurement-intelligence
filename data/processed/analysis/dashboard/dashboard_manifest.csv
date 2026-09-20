@@ -1,0 +1,22 @@
+file,dashboard_use
+dashboard_kpis.csv,Executive KPI cards
+dashboard_procurement_method.csv,Procurement method mix
+dashboard_value_distribution.csv,Award value distribution
+dashboard_duration_distribution.csv,Contract duration distribution
+dashboard_supplier_structure.csv,Single vs multiple supplier structure
+dashboard_supplier_concentration.csv,Supplier concentration
+dashboard_supplier_value_distribution.csv,Supplier allocated-value distribution
+dashboard_supplier_summary.csv,Supplier summary layer
+dashboard_buyer_overview.csv,Buyer entity overview
+dashboard_buyer_activity_bands.csv,Buyer activity bands
+dashboard_buyer_segments.csv,Buyer activity/value segmentation
+dashboard_buyer_activity_value_matrix.csv,Buyer activity/value matrix
+dashboard_buyer_outliers.csv,Buyer-level outlier table
+dashboard_top_buyers_by_value.csv,Top buyers by allocated value
+dashboard_top_buyers_by_count.csv,Top buyers by award count
+dashboard_buyer_procurement_method.csv,Buyer procurement-method analysis
+dashboard_buyer_direct_limited.csv,Buyer direct/limited exposure
+dashboard_buyer_long_duration.csv,Buyer long-duration exposure
+dashboard_buyer_data_quality.csv,Buyer data-quality metrics
+dashboard_review_population.csv,High/Priority PRI review population
+dashboard_metric_dictionary.csv,Metric definitions and caveats

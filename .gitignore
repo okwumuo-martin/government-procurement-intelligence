@@ -1,0 +1,39 @@
+# Python virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Raw procurement data
+data/raw/*
+!data/raw/.gitkeep
+
+# Large database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Temporary/generated files
+*.tmp
+*.log
+# Generated/processed analytical data
+data/processed/*
+!data/processed/.gitkeep
+!data/processed/analysis/
+data/processed/analysis/*
+!data/processed/analysis/dashboard/
+data/processed/analysis/dashboard/*
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# VS Code
+.vscode/
+
+# Streamlit secrets
+.streamlit/secrets.toml

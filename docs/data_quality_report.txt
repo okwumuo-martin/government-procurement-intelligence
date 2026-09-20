@@ -1,0 +1,80 @@
+CONTRACTS FINDER 2025 DATA QUALITY REPORT
+============================================================
+
+Procurement releases: 51,499
+Unique OCIDs: 50,773
+Unique release IDs: 50,794
+Awards: 44,501
+Supplier relationships: 44,501
+Unique supplier names: 22,205
+
+
+RELEASE DATE DISTRIBUTION
+----------------------------------------
+release_year
+2023        1
+2025    51085
+2026      413
+
+OUTSIDE-2025 RECORDS
+----------------------------------------
+Records outside 2025: 414
+
+
+RELEASE TAGS
+----------------------------------------
+release_tag
+award              41411
+tender              4543
+awardUpdate         3507
+tenderAmendment     1023
+planning            1015
+
+DUPLICATE RELEASE IDs
+----------------------------------------
+Release IDs occurring more than once: 705
+Repeated release IDs with identical key fields: 705
+
+MULTIPLE RELEASES PER OCID
+----------------------------------------
+OCIDs with multiple releases: 726
+
+SUPPLIER STANDARDIZATION
+----------------------------------------
+Raw supplier names: 22,205
+Normalized supplier names: 20,182
+Potential duplicate-name reduction: 2,023
+Normalized groups with multiple raw names: 1,721
+
+FINANCIAL VALUE QUALITY
+----------------------------------------
+Zero tender values: 0
+Negative tender values: 0
+Tender values > £100M: 495
+Zero award values: 961
+Negative award values: 0
+Award values > £100M: 290
+
+
+TOP MISSING FIELDS
+----------------------------------------
+tender_publication_date       84.46
+vcse_suitability              79.90
+sme_suitability               33.91
+procurement_method            17.61
+tender_value                  17.33
+tender_currency               17.33
+procurement_category           3.57
+procurement_method_details     2.23
+tender_period_end              1.97
+contract_end                   1.33
+contract_start                 1.32
+tender_description             0.04
+tender_id                      0.02
+tender_title                   0.00
+buyer_name                     0.00
+buyer_id                       0.00
+ocid                           0.00
+release_id                     0.00
+cpv_description                0.00
+cpv_code                       0.00
